@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doppelganger inknwall </title>
+  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVI-GAY-SON-BAR -->
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <img src="assets/logo-BRIgpwkC.png" alt="Copied InkNWall Logo" width="40" height="44" />
+        </div>
+        <span class="logo-text">InkNWall</span>
+      </a>
+
+      <div class="nav-search">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none">
+          <circle cx="9" cy="9" r="6" stroke="#666" stroke-width="1.5"/>
+          <path d="M13.5 13.5L17 17" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" placeholder="Search posters, movies, minimal..." class="search-input" id="searchInput" />
+      </div>
+
+      <div class="nav-actions">
+        <a href="#" class="nav-link">Login</a>
+        <a href="#" class="btn-signup">Sign Up</a>
+        <button class="cart-btn" id="cartBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mobile-link">Login</a>
+      <a href="#" class="mobile-link">Sign Up</a>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search posters..." class="search-input" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- FRESH WALL DROP BANNER -->
+  <div class="drop-banner">
+    <span class="drop-label">FRESH WALL DROP</span>
+    <div class="drop-ticker">
+      <span> New Drops are live ! </span>
+    </div>
+    
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+            <path d="M8 1l1.5 4.5H14l-3.75 2.75 1.5 4.5L8 10.25 4.25 12.75l1.5-4.5L2 5.5h4.5L8 1z" fill="#e85c00"/>
+          </svg>
+          HOSTEL ROOM GLOW-UP
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-white">WALLS THAT</span>
+          <span class="hero-title-orange">SPEAK.</span>
+        </h1>
+        <p class="hero-desc">
+          Give your room a sharper identity with poster drops that feel curated,<br/>
+          cinematic, and actually worth looking at every day.
+        </p>
+        <div class="hero-features">
+          <span>CURATED WALL ART</span>
+          <span class="divider">/</span>
+          <span>FAST CAMPUS PICKUP</span>
+          <span class="divider">/</span>
+          <span>DESIGNED FOR SMALL SPACES</span>
+        </div>
+        <a href="#library" class="btn-browse">
+          START BROWSING
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16">
+            <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-right">
+        <div class="featured-card">
+          <div class="featured-badge">FEATURED WALL DROP</div>
+          <div class="featured-img-collage">
+            <div class="collage-img collage-img-1">
+              <div class="collage-placeholder"><img class="collage-real-img" src="https://res.cloudinary.com/dmtnw2ago/image/upload/v1779259132/md3bgnxwgaxkpvca1mk1.jpg" alt="Spiderman poster" loading="lazy"></div>
+            </div>
+            <div class="collage-img collage-img-2">
+              <div class="collage-placeholder"><img class="collage-real-img" src="https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258508/vommwupedyvpuqdaayds.jpg" alt="Charles Leclerc poster" loading="lazy"></div>
+            </div>
+            <div class="collage-img collage-img-3">
+              <div class="collage-placeholder"><img class="collage-real-img" src="https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258175/hjjpovehvxarcyvtqlme.jpg" alt="Kurosaki Ichigo poster" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="featured-caption">Spiderman</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER SHELF -->
+  <section class="filter-shelf" id="library">
+    <div class="filter-header">
+      <div>
+        <div class="filter-label">FILTER SHELF</div>
+        <div class="filter-title">Pick the vibe for your wall</div>
+      </div>
+      <button class="all-categories-btn" id="allCatBtn">
+        <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+          <path d="M1 4h14M1 8h14M1 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        ALL CATEGORIES <span class="cat-count">60</span>
+      </button>
+    </div>
+
+    <div class="filter-tags-wrapper">
+      <button class="scroll-arrow scroll-left" id="scrollLeft">&#8249;</button>
+      <div class="filter-tags" id="filterTags">
+        <button class="filter-tag active" data-cat="all">ALL <span>60</span></button>
+        <button class="filter-tag" data-cat="movie">MOVIE <span>6</span></button>
+        <button class="filter-tag" data-cat="test">TEST <span>1</span></button>
+        <button class="filter-tag" data-cat="cricket">CRICKET <span>8</span></button>
+        <button class="filter-tag" data-cat="football">FOOTBALL <span>3</span></button>
+        <button class="filter-tag" data-cat="music">MUSIC <span>7</span></button>
+        <button class="filter-tag" data-cat="fitness">FITNESS <span>1</span></button>
+        <button class="filter-tag" data-cat="f1">F1 <span>8</span></button>
+        <button class="filter-tag" data-cat="movies">MOVIES <span>5</span></button>
+        <button class="filter-tag" data-cat="anime">ANIME <span>9</span></button>
+        <button class="filter-tag" data-cat="minimal">MINIMAL <span>5</span></button>
+        <button class="filter-tag" data-cat="motivation">MOTIVATION <span>7</span></button>
+      </div>
+      <button class="scroll-arrow scroll-right" id="scrollRight">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- POSTER LIBRARY -->
+  <section class="poster-library">
+    <div class="library-header">
+      <div>
+        <div class="library-label">POSTER LIBRARY</div>
+        <h2 class="library-title">Find the print that changes the whole room</h2>
+        <p class="library-sub">Preview the artwork, filter by category, and add pieces to your cart without breaking the browsing flow.</p>
+      </div>
+      <div class="library-meta">
+        <div class="posters-count" id="posterCount">60 POSTERS SHOWING</div>
+        <div class="tap-hint">TAP ARTWORK TO PREVIEW</div>
+      </div>
+    </div>
+
+    <div class="posters-grid" id="postersGrid">
+      <!-- Cards generated by JS -->
+    </div>
+  </section>
+
+  <!-- ABOUT / VIBE SECTION -->
+  <section class="vibe-section">
+    <div class="vibe-inner">
+      <div class="vibe-text">
+        <div class="vibe-label">WHY NOT INKNWALL?</div>
+        <h2 class="vibe-title">Premium aesthetics.<br/><span class="orange">Built for campus life.</span></h2>
+        <p class="vibe-desc">We design posters that belong in your space — cinematic prints for movie buffs, sport legends for the fanatic, minimal art for the aesthetic minimalist. All at Rs. 129.</p>
+        <div class="vibe-stats">
+          <div class="stat"><span class="stat-num">60+</span><span class="stat-label">Designs</span></div>
+          <div class="stat"><span class="stat-num">₹129</span><span class="stat-label">Per Poster</span></div>
+          <div class="stat"><span class="stat-num">IIT</span><span class="stat-label">Campus Pickup</span></div>
+        </div>
+      </div>
+      <div class="vibe-cards">
+        <div class="mini-card mc-1"><div class="mc-badge">CRICKET</div><div class="mc-body boom">BOOM<br/>BOOM</div></div>
+        <div class="mini-card mc-2"><div class="mc-badge badge-gold">PREMIUM</div><div class="mc-body spidey-mini">🕷️</div></div>
+        <div class="mini-card mc-3"><div class="mc-badge badge-blue">F1</div><div class="mc-body"><img class="mc-real-img" src="https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363527/rjmhxg8sbigm0ipp9wv0.jpg" alt="George Russell poster" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="assets/logo-BRIgpwkC.png" alt="Copied InkNWall Logo" width="40" height="44" />
+        </div>
+        <p class="footer-tagline">PREMIUM AESTHETICS FOR IITM STUDENTS.</p>
+        <line color="var(--orange)"/>
+        <p class="footer-copy">© 2026 INSTI WEBOPS. ALL RIGHTS UNRESERVED.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-feedback">Questions? Feedback? <a href="#" class="orange italic">Hit us up.</a></p>
+        <div class="footer-icons">
+          <a href="#" class="footer-icon open" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </a>
+          <a href="#" class="footer-icon open" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer-icon open" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </a>
+        </div>
+        <p class="footer-designed">DESIGNED AT IITM</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PREVIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content">
+        <div class="modal-poster" id="modalPoster"></div>
+        <div class="modal-info">
+          <div class="modal-cat" id="modalCat"></div>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <div class="modal-price">Rs. <span id="modalPrice">129</span></div>
+          <button class="modal-add-btn" id="modalAddBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">Total: <span id="cartTotal">₹0</span></div>
+      <button class="btn-checkout">PROCEED TO CHECKOUT</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
