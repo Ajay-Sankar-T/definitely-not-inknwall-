@@ -42,7 +42,7 @@ The project follows a **rendering pipeline** where all UI updates flow through d
 - **Event Delegation:** Implementing efficient event delegation for dynamic elements (e.g., filter tags, cart item removal) without attaching individual listeners to each element.
 - **Responsive Layout:** Balancing the poster grid layout, modal, and cart sidebar across different screen sizes while maintaining usability and visual appeal.
 - **Performance:** Optimizing the rendering pipeline to avoid unnecessary DOM updates, especially when filtering or searching through the poster library.
-- **Cross-Browser Compatibility:** Ensuring smooth animations and transitions across modern browsers without relying on external libraries.
+- **UI/UX Compatibility:** Ensuring smooth animations and transitions across modern browsers without relying on external libraries and tackling minor UI/UX issues along the way.
 
 ---
 
