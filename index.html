@@ -4,11 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="assets/logo-BRIgpwkC.png" type="image/x-icon" />
-  <title>Doppelganger inknwall </title>
-  <script defer src="/js/script.js"></script>
+  <title>Doppelganger inknwall</title>
   <link rel="stylesheet" href="css/style.css" />
-  
-
 </head>
 
 <body>
@@ -24,12 +21,13 @@
         <span class="logo-text">InkNWall</span>
       </a>
 
+      <!-- Search bar with inline icon and accessible placeholder text -->
       <div class="nav-search">
         <svg class="search-icon" viewBox="0 0 20 20" fill="none">
           <circle cx="9" cy="9" r="6" stroke="#666" stroke-width="1.5"/>
           <path d="M13.5 13.5L17 17" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        <input type="text" placeholder="Search posters, movies, minimal..." class="search-input" id="searchInput" />
+        <input type="text" placeholder="Search posters, movies, minimal..." class="search-input" id="searchInput" aria-label="Search posters" />
       </div>
 
       <div class="nav-actions">
@@ -163,6 +161,7 @@
 
     <div class="filter-tags-wrapper">
       <button class="scroll-arrow scroll-left" id="scrollLeft">&#8249;</button>
+      <!-- filter-tag buttons use data-cat attributes for JS category filtering -->
       <div class="filter-tags" id="filterTags">
         <button class="filter-tag active" data-cat="all">ALL <span>60</span></button>
         <button class="filter-tag" data-cat="movie">MOVIE <span>6</span></button>
@@ -189,10 +188,10 @@
         <h2 class="library-title">Find the print that changes the whole room</h2>
         <p class="library-sub">Preview the artwork, filter by category, and add pieces to your cart without breaking the browsing flow.</p>
       </div>
-      <p class="library-meta">
+      <div class="library-meta">
         <p class="posters-count" id="posterCount">60 POSTERS SHOWING</p>
         <p class="tap-hint">TAP ARTWORK TO PREVIEW</p>
-      </p>
+      </div>
     </div>
 
     <div class="posters-grid" id="postersGrid">
@@ -208,7 +207,7 @@
           <img src="assets/logo-BRIgpwkC.png" alt="Copied InkNWall Logo" width="40" height="44" />
         </div>
         <p class="footer-tagline">PREMIUM AESTHETICS FOR IITM STUDENTS.</p>
-        <line color="var(--orange)"/>
+        <div class="footer-divider" aria-hidden="true"></div>
         <p class="footer-copy">© 2026 INSTI WEBOPS. ALL RIGHTS UNRESERVED.</p>
       </div>
       <div class="footer-right">
@@ -231,8 +230,8 @@
 
   <!-- PREVIEW MODAL -->
   <div class="modal-overlay" id="modalOverlay">
-    <div class="modal" id="modal">
-      <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close preview modal">✕</button>
       <div class="modal-content">
         <div class="modal-poster" id="modalPoster"></div>
         <div class="modal-info">
