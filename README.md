@@ -1,4 +1,4 @@
-# InkNWall – README
+# Doppelganger InkNWall – README
 
 **Author:** Ajay Sankar. T
 
