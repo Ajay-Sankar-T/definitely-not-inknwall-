@@ -330,13 +330,13 @@ const POSTERS = [
 
 
 // ---- STATE ----
-
+// Application state for the cart, active filter, and current modal poster.
 let cart = [];
 let activeFilter = "all";
 let currentModalPoster = null;
 
 // ---- DOM REFS ----
-
+// Cache all DOM nodes used by interaction handlers and render logic.
 const navbar = document.getElementById("navbar");
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -405,6 +405,7 @@ filterTags.addEventListener("click", (e) => {
 // ---- RENDER HELPERS ----
 
 function renderPosterCard(poster, index) {
+  // Builds a single poster card and attaches its event listeners.
   const card = document.createElement("div");
   card.className = "poster-card" + (poster.premium ? " premium-card" : "");
   card.style.animationDelay = `${index * 0.04}s`;
@@ -450,7 +451,7 @@ function renderPosterCard(poster, index) {
   `;
 
   card.addEventListener("click", (e) => {
-    if (e.target.closest(".add-to-cart-btn")) return;
+    if (e.target.closest(".add-to-cart-btn")) return; // Prevent opening the modal when the add button is clicked.
     openModal(poster);
   });
 
@@ -463,6 +464,16 @@ function renderPosterCard(poster, index) {
   return card;
 }
 
+function renderPosterCards(posters) {
+  posterCount.textContent = `${posters.length} POSTERS SHOWING`;
+  postersGrid.innerHTML = "";
+
+  posters.forEach((poster, index) => {
+    const card = renderPosterCard(poster, index);
+    postersGrid.appendChild(card);
+  });
+}
+
 // ---- RENDER POSTERS ----
 
 function renderPosters() {
@@ -471,13 +482,7 @@ function renderPosters() {
       ? POSTERS
       : POSTERS.filter((p) => p.cat === activeFilter);
 
-  posterCount.textContent = `${filtered.length} POSTERS SHOWING`;
-  postersGrid.innerHTML = "";
-
-  filtered.forEach((poster, i) => {
-    const card = renderPosterCard(poster, i);
-    postersGrid.appendChild(card);
-  });
+  renderPosterCards(filtered);
 }
 
 // ---- MODAL ----
@@ -622,13 +627,7 @@ if (searchInput) {
         p.cat.toLowerCase().includes(q)
     );
 
-    posterCount.textContent = `${filtered.length} POSTERS SHOWING`;
-    postersGrid.innerHTML = "";
-
-    filtered.forEach((poster, i) => {
-      const card = renderPosterCard(poster, i);
-      postersGrid.appendChild(card);
-    });
+    renderPosterCards(filtered);
   });
 }
 
