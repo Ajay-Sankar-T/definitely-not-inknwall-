@@ -41,6 +41,7 @@ The project follows a **rendering pipeline** where all UI updates flow through d
 - **State Management:** Ensuring consistency between the `cart` state, `activeFilter`, and search results while maintaining a reactive UI required careful handling of state transitions and re-renders.
 - **Event Delegation:** Implementing efficient event delegation for dynamic elements (e.g., filter tags, cart item removal) without attaching individual listeners to each element.
 - **Responsive Layout:** Balancing the poster grid layout, modal, and cart sidebar across different screen sizes while maintaining usability and visual appeal.
+- **SVG Rendering: ** Rendering SVGs was challenging 
 - **Performance:** Optimizing the rendering pipeline to avoid unnecessary DOM updates, especially when filtering or searching through the poster library.
 - **UI/UX Compatibility:** Ensuring smooth animations and transitions across modern browsers without relying on external libraries and tackling minor UI/UX issues along the way.
 
