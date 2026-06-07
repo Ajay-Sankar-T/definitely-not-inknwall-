@@ -32,7 +32,6 @@ The project follows a **rendering pipeline** where all UI updates flow through d
 - **Modal View:** Clicking a poster opens a modal with detailed information and an "Add to Cart" button.
 - **Responsive Design:** Fully responsive layout with breakpoints at 1200px, 1024px, 768px, and 480px. Adapts to mobile, tablet, and desktop screens.
 - **Micro-Interactions:** Smooth animations for card hover effects, cart button scaling, modal transitions, and staggered poster grid animations.
-- **Dark Theme:** Aesthetic dark theme with orange accents using CSS variables for easy theming.
 
 ---
 
