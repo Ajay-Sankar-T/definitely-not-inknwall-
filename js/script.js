@@ -1,8 +1,3 @@
-/* ============================================================
-   INKNWALL – script.js (image-only version)
-   Vanilla JS: navbar, filter, poster grid, modal, cart
-   ============================================================ */
-
 // ---- POSTER DATA (IMAGE-ONLY) ----
 
 const POSTERS = [
@@ -75,7 +70,7 @@ const POSTERS = [
     cat: "music",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363622/lq9xv8n6un0tr7g3em4u.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363851/fmlboyjqljep8v8vujlb.jpg",
     price: 129,
   },
   {
@@ -84,7 +79,7 @@ const POSTERS = [
     cat: "movies",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363539/kn0s2bvtiet6x5a2l3af.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363853/jeijvrtufn9jkaichd9c.jpg",
     price: 129,
   },
   {
@@ -93,7 +88,7 @@ const POSTERS = [
     cat: "f1",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363527/rjmhxg8sbigm0ipp9wv0.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779704518/rlflvzut4gbmvnnoiuix.jpg",
     price: 129,
   },
   {
@@ -102,7 +97,7 @@ const POSTERS = [
     cat: "f1",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363531/w2xpt7lfqjrmckdfc8l2.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363537/tzhwaggicd8vgclw6gxc.jpg",
     price: 129,
   },
   {
@@ -111,7 +106,7 @@ const POSTERS = [
     cat: "football",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363532/zsfexbvwv8cmopmv8cz7.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779270957/y2hx83prjpgenydchstn.jpg",
     price: 129,
   },
   {
@@ -120,7 +115,7 @@ const POSTERS = [
     cat: "cricket",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363533/klwvy7qzv6z9uc9pfsmq.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779271568/btdt9gneuthinjwu2uvb.jpg",
     price: 129,
   },
   {
@@ -134,20 +129,20 @@ const POSTERS = [
   },
   {
     id: 15,
-    name: "NARUTO",
+    name: "CYBERPUNK EDGERUNNER",
     cat: "anime",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363529/qq0b6l0yvyu0p8t2yxvw.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258169/atdp2bdrwyufe1bfsz2w.jpg",
     price: 129,
   },
   {
     id: 16,
-    name: "DEATH NOTE",
+    name: "VEGETA",
     cat: "anime",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363536/cuxdc3nq6u7tih91qipd.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258178/k8to030d8i6ydaoljj9u.jpg",
     price: 129,
   },
   {
@@ -174,109 +169,165 @@ const POSTERS = [
     cat: "anime",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363538/mxj2azk1qj9pg5y7uh7w.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258176/ee1tn2d6yuo9eodiusw7.jpg",
     price: 129,
   },
   {
     id: 20,
-    name: "MOTIVATION – GRIND",
+    name: "ROLONDO – CR7",
     cat: "motivation",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363545/da0mmo3yq9k32gfsmj2c.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779270958/vstr0ni300qeyxtyy5cr.jpg",
     price: 129,
   },
   {
     id: 21,
-    name: "GALAXY MINIMAL",
+    name: "KURUSAKI ICHIGO",
     cat: "minimal",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363543/g0t9sjjk9n4n63t1x0gk.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258175/hjjpovehvxarcyvtqlme.jpg",
     price: 129,
   },
   {
     id: 22,
-    name: "PULP FICTION",
-    cat: "movie",
+    name: "PORSCHE 911",
+    cat: "cars",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363535/edtxcjh3pwn7cqj8ux0g.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258502/kbgxfwrfxtzjmpxecilm.jpg",
     price: 129,
   },
   {
     id: 23,
-    name: "GODFATHER",
-    cat: "movie",
+    name: "MCLAREN SENNA GTR",
+    cat: "cars",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363536/b9sxu7rzvpgxf6s7p7is.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258506/lsmfll6kyqdr4cw5pekh.jpg",
     price: 129,
   },
   {
     id: 24,
-    name: "DEMON SLAYER",
-    cat: "anime",
-    premium: false,
+    name: "TECHNOBLADE – MINECRAFT",
+    cat: "game",
+    premium: true,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363537/q9rj0ceo0bpmexb5m1xw.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258701/zcgosjjrlmq85nh2jnvd.jpg",
     price: 129,
   },
   {
     id: 25,
-    name: "PUSH YOUR LIMITS",
+    name: "GOKU",
     cat: "fitness",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363545/da0mmo3yq9k32gfsmj2c.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258172/i8a3ahb5xrapvafudtjw.jpg",
     price: 129,
   },
   {
     id: 26,
-    name: "DAFT PUNK",
+    name: "CHARLIE PUTH",
     cat: "music",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363541/s0wh5ey3a0r0h6bm1mto.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779259133/cf1zm6hln7xzzjmnxry2.jpg",
     price: 129,
   },
   {
     id: 27,
-    name: "KENDRICK LAMAR",
-    cat: "music",
+    name: "FIGHT CLUB",
+    cat: "movie",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363542/pt3b5qjmj7jdq0qzy9uu.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258705/gbon6bjitaeappdersmq.jpg",
     price: 129,
   },
   {
     id: 28,
-    name: "SENNA",
-    cat: "f1",
+    name: "FAST AND FURIOUS",
+    cat: "movie",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363530/uz0zj1o4jifjtij09j8p.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258704/rixkzyfixid3q1ldikgv.jpg",
     price: 129,
   },
   {
     id: 29,
-    name: "SCHUMACHER",
+    name: "CHARLES LECLERC ",
     cat: "f1",
     premium: false,
     image:
-      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363531/w2xpt7lfqjrmckdfc8l2.jpg",
+      "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779258508/vommwupedyvpuqdaayds.jpg",
     price: 129,
   },
   {
     id: 30,
     name: "RONNIE COLEMAN",
-    cat: "minimal",
+    cat: "fitness",
     premium: false,
     image:
       "https://res.cloudinary.com/dmtnw2ago/image/upload/v1779363526/dnrpr5kbijke085asasc.jpg",
     price: 129,
   },
 ];
+
+
+(function () {
+  const card = document.querySelector(".featured-card.neo");
+  if (!card) return;
+
+  const slides = Array.from(card.querySelectorAll(".featured-slide"));
+  const dots   = Array.from(card.querySelectorAll(".featured-dots-bar .dot"));
+
+  let current = 0;
+  let timer   = null;
+  const AUTO_DELAY = 5000;
+
+  function goTo(index) {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === current);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === current);
+    });
+  }
+
+  function nextSlide() {
+    goTo(current + 1);
+  }
+
+  function startAuto() {
+    stopAuto();
+    timer = setInterval(nextSlide, AUTO_DELAY);
+  }
+
+  function stopAuto() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      goTo(i);
+      startAuto();
+    });
+  });
+
+  card.addEventListener("mouseenter", stopAuto);
+  card.addEventListener("mouseleave", startAuto);
+
+  goTo(0);
+  startAuto();
+})();
+
 
 // ---- STATE ----
 
@@ -387,10 +438,10 @@ function renderPosterCard(poster, index) {
           <div class="card-price-val">Rs. ${poster.price}</div>
         </div>
         <button class="add-to-cart-btn" data-id="${poster.id}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="13" y1="16" x2="21" y2="26"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag relative z-10 h-4 w-4" aria-hidden="true">
+            <path d="M16 10a4 4 0 0 1-8 0">  </path>
+            <path d="M3.103 6.034h17.794"> </path>
+            <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"> </path>
           </svg>
           ADD TO CART
         </button>
